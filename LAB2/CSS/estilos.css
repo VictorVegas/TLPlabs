@@ -1,0 +1,33 @@
+#menu{
+    position: sticky;
+    background-color: #BF0514;
+    color: #FFFFFF;
+}
+
+h2{
+    text-align: right;
+    color: #C0C0C0;
+}
+
+#mundo{
+    background-color: #BF0514;
+}
+#corchea{
+    background-color: #4A6BA1;
+}
+#carrito{
+    background-color: #C0C0C0;
+}
+
+.fntblanca{
+    color: #FFFFFF;
+}
+
+/*
+    colores
+    #272929
+    #BF0514
+    #4A6BA1
+    #C0C0C0
+    #FFFFFF
+*/
