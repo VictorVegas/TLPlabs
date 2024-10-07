@@ -1,0 +1,8 @@
+.col-12{
+    border: 4mm ridge rgba(211, 220, 50, .6);
+    transition: 2s;
+}
+
+.col-12:hover{
+    background-color: black
+}
