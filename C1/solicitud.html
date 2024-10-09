@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tienda Verde</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="CONTNT\estilos.css">
+  </head>
+  <body class="fndc">
+    <nav class="navbar sticky-top navbar-expand-lg" style="background-color: #DDE5B6;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="main.html">TIENDA VERDE</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="main.html#barra">INICIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="catalogo.html">CATÁLOGO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-current="page" href="solicitud.html"><strong>SOLICITAR RECOLECCIÓN</strong></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <div class="container cnt">
+        <div class="row p-2">
+          <div class="col-12 col-md-7">
+            <p>
+              Para formar parte de nuestro programa de reciclaje <i class="fa fa-recycle" aria-hidden="true"></i>
+              ingresa tus datos, de este modo nosotros iremos a tu ubicación a recoger tus residuos reciclables y de
+              esta manera hacer tu aporte  al planeta <i class="fa fa-globe" aria-hidden="true"></i>, <strong>muchos árboles y animales te lo agradecerán</strong>.
+            </p>
+            <div class="row mx-auto">
+              <div class="col-5 mx-auto">
+                <img src="CONTNT\camion.png" alt="camion" class="foto">
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <img src="CONTNT\reciclar.png" alt="logo" class="logo">
+        </div>
+        </div>
+        <p>Seleccione el tipo de material reciclable (<strong>Obligarorio</strong>)</p>
+        <div class="input-group mb-3 p-2">
+          <label class="input-group-text" for="tipo">Tipo de Residuo</label>
+          <select class="form-select" id="tipo">
+            <option selected value="0">Elegir...</option>
+            <option value="1">Plástico</option>
+            <option value="2">Papel</option>
+            <option value="3">Vidrio</option>
+            <option value="4">Metales</option>
+            <option value="5">Electrónicos</option>
+          </select>
+        </div>
+        <p>Seleccione el subtipo de material reciclable (<strong>Obligarorio</strong>)</p>
+        <div class="input-group mb-3 p-2">
+          <label class="input-group-text" for="subtipo" >Subtipo</label>
+          <select class="form-select" id="subtipo" disabled>
+            <option selected value="0">Elegir...</option>
+            <option value="1"></option>
+            <option value="2"></option>
+            <option value="3"></option>
+          </select>
+        </div>
+        <p>Inserte nombre y apellido, uno en cada casilla (<strong>Obligarorio</strong>)</p>
+        <div class="input-group mb-3 p-2">
+          <span class="input-group-text">Nombre y Apellido</span>
+          <input type="text" aria-label="Nombre" class="form-control" id="nombre">
+          <input type="text" aria-label="Apellido" class="form-control" id="apellido">
+        </div>
+        <p>Inserte correo electrónico (<strong>Obligarorio</strong>)</p>
+        <div class="input-group mb-3 p-2">
+          <input type="text" class="form-control" placeholder="usuario" aria-label="usuario" id="usuario">
+          <span class="input-group-text">@</span>
+          <input type="text" class="form-control" placeholder="server.com" aria-label="server" id="server">
+        </div>
+        <p>Inserte Dirección donde se recogeran los residuos (<strong>Obligarorio</strong>)</p>
+        <div class="input-group mb-3 p-2">
+          <span class="input-group-text" id="inputGroup-sizing-default">Dirección</span>
+          <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="direccion">
+        </div>
+        <p>Inserte comentarios adicionales para su solicitud, de no ser necesario dejar en blanco</p>
+        <div class="input-group p-2">
+          <span class="input-group-text">Comentarios</span>
+          <textarea class="form-control" aria-label="With textarea" placeholder="Descripcion opcional"></textarea>
+        </div>
+        <div class="row">
+          <div class="col-1 mx-auto">
+            <button type="button" class="btn btn-success" id="enviar">Enviar</button>
+          </div>
+        </div>
+        
+      </div>
+      
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="CONTNT/script.js"></script>
+  </body>
+</html>
